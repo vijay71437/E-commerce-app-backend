@@ -69,7 +69,7 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ApiError> handleOthers(Exception ex, HttpServletRequest request) {
-        IO.println(ex.getClass().getName());
+        //IO.println(ex.getClass().getName());
         ApiError body = ApiError.of(HttpStatus.INTERNAL_SERVER_ERROR, "Internal server error", "An unexpected error occurred", request.getRequestURI());
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                 .header(HttpHeaders.CACHE_CONTROL, "no-store")
