@@ -71,10 +71,10 @@ spring:
 
 app:
   cors:
-    allowed-origins: "http://localhost:5173"
+    allowed-origins: "https://luminous-kangaroo-b51979.netlify.app/"
   auth:
-    success-redirect: "http://localhost:5173/auth/success"
-    failure-redirect: "http://localhost:5173/auth/failure"
+    success-redirect: "https://luminous-kangaroo-b51979.netlify.app/auth/success"
+    failure-redirect: "https://luminous-kangaroo-b51979.netlify.app/auth/failure"
 
 
 logging.level.com.substring.auth.app: DEBUG
