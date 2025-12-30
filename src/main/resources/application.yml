@@ -4,4 +4,4 @@ spring:
   application:
     name: auth-backend
   profiles:
-    active: ${ENV:dev}
+    active: ${ENV:prod}
